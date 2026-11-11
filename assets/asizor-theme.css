@@ -1,0 +1,73 @@
+/* asizor v1.2 theme for Upptime. Hex literals only: every value is a v1.2 design token. */
+@font-face {
+  font-family: "Sora";
+  font-weight: 700;
+  src: url("/sora-latin-700-normal.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 100 900;
+  src: url("/inter-latin-wght-normal.woff2") format("woff2");
+  font-display: swap;
+}
+
+:root {
+  --body-background-color: #F5F6F9;
+  --body-text-color: #0B0D14;
+  --card-background-color: #FFFFFF;
+  --card-border-color: #E2E5EC;
+  --nav-background-color: #08090D;
+  --nav-border-bottom-color: #232737;
+  --nav-current-border-bottom-color: #7C5CFF;
+  --up-border-left-color: #10B981;
+  --degraded-border-left-color: #F59E0B;
+  --down-border-left-color: #DC2626;
+  --down-background-color: rgba(220, 38, 38, .09);
+  --tag-color: #FFFFFF;
+  --tag-up-background-color: #047857;
+  --tag-degraded-background-color: #B45309;
+  --tag-down-background-color: #B91C1C;
+  --change-background-color: #F0F2F6;
+  --error-button-border-color: #B91C1C;
+  --error-button-background-color: #B91C1C;
+  --error-button-color: #FFFFFF;
+  --submit-button-border-color: #6A4CF0;
+  --submit-button-background-color: #6A4CF0;
+  --submit-button-color: #FFFFFF;
+  --code-color: #ECEEF5;
+  --code-background-color: #08090D;
+  --graph-opacity: 1;
+  --graph-filter: none;
+}
+
+body { font-family: "Inter", system-ui, sans-serif; }
+a { color: #6A4CF0; }
+
+/* Nav is the theme-independent brand-inverse surface in both modes. */
+nav a.logo > div {
+  font-family: "Sora", sans-serif !important;
+  font-weight: 700 !important;
+  color: #ECEEF5 !important;
+  letter-spacing: -0.01em;
+}
+nav a.logo img { height: 28px; }
+nav ul a { color: #A9AFC2 !important; }
+nav ul a[aria-current] { color: #ECEEF5 !important; }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-background-color: #0E1016;
+    --body-text-color: #ECEEF5;
+    --card-background-color: #181B25;
+    --card-border-color: #232737;
+    --down-background-color: rgba(220, 38, 38, .13);
+    --change-background-color: #12141C;
+    --submit-button-border-color: #A996FF;
+    --submit-button-background-color: #A996FF;
+    --submit-button-color: #0B0D14;
+    --graph-opacity: 1;
+    --graph-filter: none;
+  }
+  a { color: #A996FF; }
+}
