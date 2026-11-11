@@ -6,10 +6,10 @@ under load) and publishes the page with GitHub Pages.
 
 ## What is monitored
 
-| Name | URL | Up when |
-| --- | --- | --- |
-| API | `https://api.asizor.com/health/ready` | 200 within 10 s (the API can reach its database and has tax data loaded) |
-| Website | `https://asizor.com` | 200 within 10 s |
+| Name    | URL                                   | Up when                                                                  |
+| ------- | ------------------------------------- | ------------------------------------------------------------------------ |
+| API     | `https://api.asizor.com/health/ready` | 200 within 10 s (the API can reach its database and has tax data loaded) |
+| Website | `https://asizor.com`                  | 200 within 10 s                                                          |
 
 Only these two are listed for now. The customer dashboard is added at launch. Internal and
 staff-only hosts are never listed. This page is the customer-facing view; our internal uptime
