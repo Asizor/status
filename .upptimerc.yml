@@ -20,9 +20,9 @@ assignees:
 status-website:
   cname: status.asizor.com
   name: asizor
-  logoUrl: /asizor-mark-on-dark.svg
-  favicon: /favicon.svg
-  themeUrl: /asizor-theme.css
+  logoUrl: https://status.asizor.com/asizor-mark-on-dark.svg
+  favicon: https://status.asizor.com/favicon.svg
+  themeUrl: https://status.asizor.com/asizor-theme.css
   introTitle: "asizor service status"
   introMessage: "We check the asizor API and website from outside our own infrastructure about every 5 minutes. When a check fails, an incident opens here automatically, and updates are posted to it until it is resolved."
   navbar:
