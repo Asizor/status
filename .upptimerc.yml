@@ -5,11 +5,13 @@ user-agent: asizor-status (+https://status.asizor.com)
 sites:
   - name: API
     slug: api
+    icon: https://status.asizor.com/favicon.svg
     url: https://api.asizor.com/health/ready
     expectedStatusCodes: [200]
     maxResponseTime: 10000
   - name: Website
     slug: website
+    icon: https://status.asizor.com/favicon.svg
     url: https://asizor.com
     expectedStatusCodes: [200]
     maxResponseTime: 10000
