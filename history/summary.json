@@ -1,0 +1,38 @@
+[
+  {
+    "name": "API",
+    "url": "https://api.asizor.com/health/ready",
+    "icon": "https://icons.duckduckgo.com/ip3/api.asizor.com.ico",
+    "slug": "api",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 181,
+    "timeDay": 181,
+    "timeWeek": 181,
+    "timeMonth": 181,
+    "timeYear": 181,
+    "dailyMinutesDown": {}
+  },
+  {
+    "name": "Website",
+    "url": "https://asizor.com",
+    "icon": "https://icons.duckduckgo.com/ip3/asizor.com.ico",
+    "slug": "website",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 567,
+    "timeDay": 567,
+    "timeWeek": 567,
+    "timeMonth": 567,
+    "timeYear": 567,
+    "dailyMinutesDown": {}
+  }
+]
