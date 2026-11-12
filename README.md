@@ -60,16 +60,16 @@ Rotate:
 
 ## Upgrades
 
-Every action is pinned to a commit SHA, and the "Update Template CI" and "Updates CI" workflows are
-disabled, so no upstream change reaches this repository or `GH_PAT` without review. To upgrade:
+The cron Worker in `Asizor/asizor` (`infra/status-trigger`) is the only scheduler: these workflows have no
+`schedule:` triggers, because GitHub's cron here was sparse and its runs cancelled the Worker's in the shared
+concurrency group. Every action is pinned to a commit SHA, and nothing regenerates the workflow files: the
+template-update and updates workflows are deleted, and Setup CI no longer runs `update-template` (it rewrites
+every workflow from upstream). To upgrade:
 
 1. Read the release notes and the diff for the new `upptime/uptime-monitor` tag (or other action).
 2. Replace the SHA (and the version comment) in every `.github/workflows/*.yml` that uses it, in one
    commit.
 3. Confirm the next "Uptime CI" and "Static Site CI" runs are green.
-
-Do not re-enable the two update workflows: they run upstream `master` with `GH_PAT` and overwrite
-these workflow files.
 
 ---
 
