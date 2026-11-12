@@ -58,6 +58,19 @@ Rotate:
 3. Re-run the "Setup CI" workflow and confirm the "Uptime CI" run after it is green.
 4. Revoke the old token.
 
+## Upgrades
+
+Every action is pinned to a commit SHA, and the "Update Template CI" and "Updates CI" workflows are
+disabled, so no upstream change reaches this repository or `GH_PAT` without review. To upgrade:
+
+1. Read the release notes and the diff for the new `upptime/uptime-monitor` tag (or other action).
+2. Replace the SHA (and the version comment) in every `.github/workflows/*.yml` that uses it, in one
+   commit.
+3. Confirm the next "Uptime CI" and "Static Site CI" runs are green.
+
+Do not re-enable the two update workflows: they run upstream `master` with `GH_PAT` and overwrite
+these workflow files.
+
 ---
 
 **Upptime** (<https://upptime.js.org>) is the open-source uptime monitor and status page, powered entirely by GitHub Actions, Issues, and Pages, made with 💚 by [Anand Chowdhary](https://anandchowdhary.com). Code: [MIT](./LICENSE).
