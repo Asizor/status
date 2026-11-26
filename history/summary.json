@@ -34,5 +34,23 @@
     "timeMonth": 548,
     "timeYear": 548,
     "dailyMinutesDown": {}
+  },
+  {
+    "name": "Dashboard",
+    "url": "https://app.asizor.com/users/log_in",
+    "icon": "https://status.asizor.com/favicon.svg",
+    "slug": "dashboard",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 0,
+    "timeDay": 0,
+    "timeWeek": 0,
+    "timeMonth": 0,
+    "timeYear": 0,
+    "dailyMinutesDown": {}
   }
 ]
