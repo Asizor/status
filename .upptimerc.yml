@@ -15,6 +15,12 @@ sites:
     url: https://asizor.com
     expectedStatusCodes: [200]
     maxResponseTime: 10000
+  - name: Dashboard
+    slug: dashboard
+    icon: https://status.asizor.com/favicon.svg
+    url: https://app.asizor.com/users/log_in
+    expectedStatusCodes: [200]
+    maxResponseTime: 10000
 
 assignees:
   - Lancelittle
@@ -26,7 +32,7 @@ status-website:
   favicon: https://status.asizor.com/favicon.svg
   themeUrl: https://status.asizor.com/asizor-theme.css
   introTitle: "asizor service status"
-  introMessage: "We check the asizor API and website from outside our own infrastructure about every 5 minutes. When a check fails, an incident opens here automatically, and updates are posted to it until it is resolved."
+  introMessage: "We check the asizor API, website and dashboard from outside our own infrastructure about every 5 minutes. When a check fails, an incident opens here automatically, and updates are posted to it until it is resolved."
   navbar:
     - title: Status
       href: /
